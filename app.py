@@ -1,4 +1,4 @@
-(app.py content starts)
+#(app.py content starts)
 from flask import Flask, request, redirect, session, render_template_string
 import sqlite3
 from functools import wraps
@@ -79,7 +79,7 @@ button { padding:6px 12px; }
 <hr>
 {% endif %}
 
-{{ content }}
+{{ content|safe }}
 
 </body>
 </html>
@@ -288,4 +288,4 @@ def reports():
 
 if __name__ == "__main__":
     app.run()
-(app.py content ends)
+#(app.py content ends)
